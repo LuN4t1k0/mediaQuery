@@ -120,3 +120,42 @@ a {
 .product-links a:hover {
   color: #fbb72c;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer";
+  grid-template-rows: 10vh 10vh auto 10vh;
+  background: rgb(219, 23, 23);
+}
+
+.header{
+  grid-area: header;
+  background: #fbb72c;
+  color: #000;
+  text-align: center;
+  
+}
+.menu{
+  grid-area: nav;
+  
+  background: #b7831b;
+  color: #000;
+  text-align: center;
+}
+
+.main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2,1fr);
+  background: #fbb72c;
+  color: #000;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.footer{
+  grid-area: footer;
+  background: #b7831b;
+  color: #000;
+  text-align: center;
+}
