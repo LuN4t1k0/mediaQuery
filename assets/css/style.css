@@ -19,12 +19,13 @@ a {
 
 .product-card {
   /* width: 380px; */
+  /* esta medida aplica para el mobile */
   width: 90%;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
   margin: 10px auto;
   background: #fafafa;
-  
+
 }
 
 .badge {
@@ -134,11 +135,11 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-areas:  "header"
-                        "nav"
-                        "main"
-                        "footer";
-  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: 10% 10% auto 10%;
   height: 100vh;
 
 }
@@ -148,6 +149,16 @@ a {
   color: #000;
   text-align: center;
   background-color: #999;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header i {
+  font-size: 30px;
+  color: #fbb72c;
 }
 
 .menu {
@@ -157,13 +168,23 @@ a {
   background-color: #ccc;
 }
 
+/* SELECT */
+.combo-box select {
+  width: 80%;
+  height: 40px;
+}
+
 .main {
   grid-area: main;
-  display: grid;
- 
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   /* background-color: #dfdfdf; */
 }
+
+/* .card {
+  width: 24%;
+  } */
 
 /* Paginacion W3school */
 .center {
@@ -181,7 +202,7 @@ a {
   text-decoration: none;
   transition: background-color .3s;
   border: 1px solid #ddd;
-  margin: 0 4px;
+  /* margin: 0 4px; */
 }
 
 .pagination a.active {
@@ -190,12 +211,15 @@ a {
   border: 1px solid #4CAF50;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
 
 .footer {
   grid-area: footer;
   text-align: center;
   background-color: #e1e1e1;
+  
 }
 
 
