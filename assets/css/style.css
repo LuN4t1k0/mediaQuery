@@ -158,7 +158,14 @@ a {
 
 .header i {
   font-size: 30px;
-  color: #fbb72c;
+  color: white;
+}
+
+.header h1{
+  font-size: 1em;
+  color: white;
+  font-weight: 200;
+  
 }
 
 .menu {
@@ -177,10 +184,18 @@ a {
 .main {
   grid-area: main;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+ 
+  /* flex-wrap: wrap; */
+  /* justify-content: center;
+  align-items: center; */
   gap: 10px;
   /* background-color: #dfdfdf; */
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Paginacion W3school */
@@ -215,8 +230,21 @@ a {
   grid-area: footer;
   text-align: center;
   background-color: #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   
 }
+
+.footer .icon {
+  font-size: 20px;
+  padding-top: 5px;
+  
+}
+
+
 
 
 
