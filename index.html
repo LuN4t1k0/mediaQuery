@@ -5,127 +5,93 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- CSS only -->
   <script src="https://kit.fontawesome.com/30073eaac1.js" crossorigin="anonymous"></script>
   <title>Desafio 3 - @mediaQuery</title>
 </head>
 <body>
   <section class="grid-container">
-    <header class="header">header</header>
-    <nav class="menu">Menu</nav>
+    <header class="header">
+      <h1>header</h1>
+      <div class="icon">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <nav class="menu">
+      <h4>Ordernar Por :</h4>
+      <select name="select">
+        <option value="value1">Color </option>
+        <option value="value2" selected>Precio </option>
+        <option value="value3">Tamaño </option>
+      </select>
+    </nav>
     <main class="main">
-      <div class="product-card">
-        <div class="badge">SuperVenta</div>
-        <div class="product-tumb">
-          <img src="/assets/img/5.jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">Stars Wars</span>
-          <h4><a href="">Darth Vader Plashero</a></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$30.000</small>$23.990</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
+      <div class="card">
+        <div class="product-card">
+          <div class="badge">SuperVenta</div>
+          <div class="product-tumb">
+            <img src="/assets/img/5.jpg" alt="">
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">Stars Wars</span>
+            <h4><a href="">Darth Vader Plashero</a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>$30.000</small>$23.990</div>
+              <div class="product-links">
+                <a href=""><i class="fa fa-heart"></i></a>
+                <a href=""><i class="fa fa-shopping-cart"></i></a>
+              </div>
             </div>
           </div>
-        </div>
       </div>
-      <div class="product-card">
-        <div class="badge">SuperVenta</div>
-        <div class="product-tumb">
-          <img src="/assets/img/5.jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">Stars Wars</span>
-          <h4><a href="">Darth Vader Plashero</a></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$30.000</small>$23.990</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="badge">SuperVenta</div>
-        <div class="product-tumb">
-          <img src="/assets/img/5.jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">Stars Wars</span>
-          <h4><a href="">Darth Vader Plashero</a></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$30.000</small>$23.990</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="badge">SuperVenta</div>
-        <div class="product-tumb">
-          <img src="/assets/img/5.jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">Stars Wars</span>
-          <h4><a href="">Darth Vader Plashero</a></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$30.000</small>$23.990</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="badge">SuperVenta</div>
-        <div class="product-tumb">
-          <img src="/assets/img/5.jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">Stars Wars</span>
-          <h4><a href="">Darth Vader Plashero</a></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$30.000</small>$23.990</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="badge">SuperVenta</div>
-        <div class="product-tumb">
-          <img src="/assets/img/5.jpg" alt="">
-        </div>
-        <div class="product-details">
-          <span class="product-catagory">Stars Wars</span>
-          <h4><a href="">Darth Vader Plashero</a></h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
-          <div class="product-bottom-details">
-            <div class="product-price"><small>$30.000</small>$23.990</div>
-            <div class="product-links">
-              <a href=""><i class="fa fa-heart"></i></a>
-              <a href=""><i class="fa fa-shopping-cart"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Paginator -->
+      <!-- <div class="pagination">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div> -->
 
-    
+      <div class="center">
+        <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+        </div>
+      </div>
+        
+       
     </main>
-    <footer class="footer">footer</footer>
+    <footer class="footer">
+      <div class="icon">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <div class="copyrigth">
+        <h5>Todos los derechos reservados</h5>
+      </div>
+    </footer>
 
   </section>
+  <!-- JavaScript Bundle with Popper -->
 </body>
 </html>

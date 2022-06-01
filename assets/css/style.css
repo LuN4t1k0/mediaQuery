@@ -9,18 +9,22 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
 }
 
 a {
   text-decoration: none;
 }
 
+
 .product-card {
-  width: 380px;
+  /* width: 380px; */
+  width: 90%;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
   margin: 10px auto;
   background: #fafafa;
+  
 }
 
 .badge {
@@ -130,161 +134,78 @@ a {
 
 .grid-container {
   display: grid;
-  /* gap: 10px; */
-  grid-template-areas: "header header""nav main""footer footer";
-  grid-template-rows: 1fr 1fr 1fr;
-
-  /* box-sizing: border-box; */
+  grid-template-areas:  "header"
+                        "nav"
+                        "main"
+                        "footer";
+  grid-template-rows: auto auto auto auto;
   height: 100vh;
 
 }
 
 .header {
   grid-area: header;
-
   color: #000;
   text-align: center;
-
+  background-color: #999;
 }
 
 .menu {
   grid-area: nav;
-
-
   color: #000;
   text-align: center;
+  background-color: #ccc;
 }
 
 .main {
   grid-area: main;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-
-
-  /* box-sizing: border-box; */
+ 
   gap: 10px;
+  /* background-color: #dfdfdf; */
 }
 
-.footer {
-  grid-area: footer;
-
+/* Paginacion W3school */
+.center {
   text-align: center;
 }
 
-
-
-/*desktops - higher resolution*/
-@media (min-width: 1281px) {
-  .main {
-    background-color: #b71b1b;
-  }
-
-  .menu {
-    background-color: #999;
-  }
-
-  .header {
-    background-color: #1b1bb7;
-  }
-
-  .footer {
-    background-color: #b71b1b;
-  }
+.pagination {
+  display: inline-block;
 }
 
-/*laptops, desktops*/
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-  .main {
-    background-color: #a2b71b;
-  }
-
-  .menu {
-    background-color: #999;
-  }
-
-  .header {
-    background-color: #1b1bb7;
-  }
-
-  .footer {
-    background-color: #b71b1b;
-  }
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
 }
 
-/*tablets, ipads (portrait)*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main {
-    background-color: #af1bb7;
-  }
-
-  .menu {
-    background-color: #999;
-  }
-
-  .header {
-    background-color: #1b1bb7;
-  }
-
-  .footer {
-    background-color: #b71b1b;
-  }
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
 }
 
-/*tablets, ipads (landscape)*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .main {
-    background-color: #471bb7;
-  }
+.pagination a:hover:not(.active) {background-color: #ddd;}
 
-  .menu {
-    background-color: #999;
-  }
-
-  .header {
-    background-color: #1b1bb7;
-  }
-
-  .footer {
-    background-color: #b71b1b;
-  }
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #e1e1e1;
 }
 
-/*low resolution tablets, mobiles (landscape)*/
-@media (min-width: 481px) and (max-width: 767px) {
-  .main {
-    background-color: #1b1bb7;
-  }
 
-  .menu {
-    background-color: #999;
-  }
 
-  .header {
-    background-color: #1b1bb7;
-  }
 
-  .footer {
-    background-color: #b71b1b;
-  }
+/* 
+@media (min-width: 576px) {
+
 }
 
-/*smartphones mobiles (portrait)*/
-@media (min-width: 320px) and (max-width: 480px) {
-  .main {
-    background-color: #1b64b7;
-  }
+<i class="fas fa-bars"></i>
 
-  .menu {
-    background-color: #999;
-  }
-
-  .header {
-    background-color: #1b1bb7;
-  }
-
-  .footer {
-    background-color: #b71b1b;
-  }
-}
+*/
