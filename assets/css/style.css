@@ -30,6 +30,7 @@ a {
   border: 1px solid #e5e5e5;
   justify-content: space-between;
   align-content: center;
+  box-shadow: #000 0px 0px 5px;
 }
 
 .card-img {
