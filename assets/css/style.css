@@ -17,14 +17,13 @@ a {
 }
 
 
-.product-card {
-  width: 90%;
-  position: relative;
+/* .product-card {
+  width: 100%;
   box-shadow: 0 2px 7px #dfdfdf;
   margin: 10px auto;
   background: #fafafa;
 
-}
+} */
 
 .badge {
   position: absolute;
@@ -43,7 +42,7 @@ a {
   align-items: center;
   justify-content: center;
   /* altura imagen */
-  height: 200px;
+  height: 150px;
   padding: 10px;
   background: #f0f0f0;
 }
@@ -93,7 +92,7 @@ a {
 .product-bottom-details {
   overflow: hidden;
   border-top: 1px solid #eee;
-  padding-top: 20px;
+  padding: 20px;
 }
 
 .product-bottom-details div {
@@ -160,7 +159,7 @@ a {
 }
 
 .header h1{
-  font-size: 1em;
+  font-size: 1.2em;
   color: white;
   font-weight: 200;
   
@@ -174,9 +173,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.menu h4{
+  font-weight: 200;
 }
 
 /* SELECT */
@@ -203,18 +206,18 @@ a {
 .cards{
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: center;
   gap: 20px;
+  padding: 20px;
   
 }
 .card {
   height: 400px;
   width: 300px;
-  background-color: #771010;
-  border: #000 1px solid;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 10px auto;
+  background: #fafafa;
 
-  
-  
 }
 
 .display-laptop{
@@ -222,7 +225,6 @@ a {
 }
 
 /* Paginacion W3school */
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -236,13 +238,13 @@ a {
   text-decoration: none;
   transition: background-color .3s;
   border: 1px solid #ddd;
-  /* margin: 0 4px; */
+  
 }
 
 .pagination a.active {
-  background-color: #4CAF50;
+  background-color: #1976d2;
   color: white;
-  border: 1px solid #4CAF50;
+  border: 1px solid #1976d2;
 }
 
 .pagination a:hover:not(.active) {
@@ -259,6 +261,10 @@ a {
   align-items: center;
   justify-content: center;
 
+}
+
+.footer h5{
+  font-weight: 200;
 }
 
 .footer .icon {
